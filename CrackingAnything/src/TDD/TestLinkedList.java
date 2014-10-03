@@ -50,4 +50,15 @@ public class TestLinkedList {
 			return false;
 		return true;
 	}
+	
+	@Test
+	public void removeDuplicatesWithoutMem(){
+		Assert.assertTrue(compareListNode(a, linkedList.removeDuplicatesWithoutMem(a_c)));
+	}
+	
+	@Test
+	public void findNth(){
+		Assert.assertEquals(4, linkedList.findNth(a,  2));
+	}
+	
 }
