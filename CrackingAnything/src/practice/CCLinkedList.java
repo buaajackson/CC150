@@ -72,8 +72,43 @@ public class CCLinkedList {
 	}
 	
 	//2.3
-	public void deleteMiddleNode(ListNode head){
+	public ListNode deleteMiddleNode(ListNode head, int n){
+		ListNode headCopy = head;
+		for(int i = 0; i < n; i++){
+			head = head.next;
+		}
+		head.val = head.next.val;
+		head.next = head.next.next;
 		
+		return headCopy;
+	}
+	
+	//2.4
+	public ListNode sumOfLinkedList(ListNode a, ListNode b){
+		return sumOfLinklist(a, b, 0);
+	}
+	
+	private ListNode sumOfLinklist(ListNode a, ListNode b, int carry){
+		if(a == null && b == null && carry == 0)
+			return null;
+		
+		int value = carry;
+		if(a != null){
+			value += a.val; 
+		}
+		
+		if(b != null)
+			value += b.val;
+		
+		if(value >= 10)
+			carry = 1;
+		else
+			carry = 0;
+		value = value % 10;
+		ListNode head = new ListNode(value);
+		head.next = sumOfLinklist(a == null ? null : a.next, b == null ? null : b.next, carry);
+		
+		return head;
 	}
 	
 }

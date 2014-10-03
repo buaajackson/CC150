@@ -61,4 +61,29 @@ public class TestLinkedList {
 		Assert.assertEquals(4, linkedList.findNth(a,  2));
 	}
 	
+	@Test
+	public void removeMiddleNode(){
+		ListNode e = new ListNode(5);
+		ListNode d = new ListNode(4, e);
+		ListNode b = new ListNode(2, d);
+		ListNode expected = new ListNode(1, b);
+		
+		Assert.assertTrue(compareListNode(expected, linkedList.deleteMiddleNode(a, 2)));
+	}
+	
+	@Test
+	public void sumOfLinkedlist(){
+		ListNode b = new ListNode(9);
+		ListNode one = new ListNode(9, b);
+		
+		ListNode c = new ListNode(3);
+		ListNode two = new ListNode(5, c);
+		
+		ListNode e = new ListNode(1);
+		ListNode d = new ListNode(3, e);
+		ListNode expected = new ListNode(4, d);
+		
+		Assert.assertTrue(compareListNode(expected, linkedList.sumOfLinkedList(one, two)));
+		
+	}
 }
