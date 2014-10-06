@@ -4,6 +4,7 @@ import java.util.*;
 
 import javax.swing.text.html.HTMLDocument.RunElement;
 
+import structure.LinkedListContainer;
 import structure.ListNode;
 
 public class CCLinkedList {
@@ -111,4 +112,61 @@ public class CCLinkedList {
 		return head;
 	}
 	
+	
+	//2.4 reverse
+	public ListNode sumOfReversedLinkedList(ListNode a, ListNode b){
+		int lenA = lengthOfLinkList(a);
+		int lenB = lengthOfLinkList(b);
+		
+		if(lenA > lenB){
+			b = addDifference(b, lenA-lenB);
+		} else if(lenA < lenB){
+			a = addDifference(a, lenB-lenA);
+		}
+		
+		LinkedListContainer result = sumOfReversedLinkedListInternal(a, b);
+		
+		if(result.getCarrier() == 0 )
+			return result.getResultNode();
+		else
+			return new ListNode(1, result.getResultNode());
+		
+	}
+	
+	private int lengthOfLinkList(ListNode a){
+		int n = 0;
+		while(a != null){
+			n++;
+			a = a.next;
+		}
+		return n;
+	}
+	
+	private ListNode addDifference(ListNode a, int len){
+		ListNode temp = null;
+		for(int i = 0; i < len; i++){
+			temp = new ListNode(0, a);
+			a = temp;
+		}
+		return temp;
+	}
+	
+	private LinkedListContainer sumOfReversedLinkedListInternal(ListNode a, ListNode b){
+		
+		LinkedListContainer cur = null;
+		if(a == null || b == null)
+			return null;
+		else {
+			cur = sumOfReversedLinkedListInternal(a.next, b.next);
+		}
+		
+		int value = 0;
+		if(cur != null)
+			value = cur.getCarrier();
+		
+		value += a.val;
+		value += b.val;
+		
+		return new LinkedListContainer(new ListNode(value%10, cur == null ? null : cur.getResultNode()), value/10);
+	}
 }

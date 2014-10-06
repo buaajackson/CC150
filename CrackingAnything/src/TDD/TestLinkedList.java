@@ -51,6 +51,17 @@ public class TestLinkedList {
 		return true;
 	}
 	
+	private int linkListValue(ListNode n){
+		
+		int result = 0;
+		while(n != null){
+			result = result*10 + n.val;
+			n = n.next;
+		}
+		
+		return result;
+	}
+	
 	@Test
 	public void removeDuplicatesWithoutMem(){
 		Assert.assertTrue(compareListNode(a, linkedList.removeDuplicatesWithoutMem(a_c)));
@@ -85,5 +96,16 @@ public class TestLinkedList {
 		
 		Assert.assertTrue(compareListNode(expected, linkedList.sumOfLinkedList(one, two)));
 		
+	}
+	
+	@Test
+	public void sumOfLinkedListReverse() {
+		ListNode b = new ListNode(9);
+		ListNode one = new ListNode(9, b);
+		
+		ListNode c = new ListNode(3);
+		ListNode two = new ListNode(5, c);
+				
+		Assert.assertEquals(152, linkListValue(linkedList.sumOfReversedLinkedList(one, two)));
 	}
 }
