@@ -1,6 +1,6 @@
 package TDD;
 
-import leetCode.MinStack;
+import leetCode.*;
 
 import org.junit.*;
 
@@ -22,5 +22,14 @@ public class TestLeetCode {
 		Assert.assertEquals(-1024, ms.getMin());
 		ms.pop();
 		Assert.assertEquals(512, ms.getMin());		
+	}
+	
+	@Test
+	public void testNumberPalindrome(){
+		Palindrome p = new Palindrome();
+		Assert.assertTrue(p.numberPalindrome(12344321));
+		Assert.assertTrue(p.numberPalindrome(1234321));
+		Assert.assertFalse(p.numberPalindrome(12332));
+		Assert.assertFalse(p.numberPalindrome(10));
 	}
 }
