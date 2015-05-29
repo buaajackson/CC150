@@ -1,5 +1,6 @@
 package practice;
 
+import leetCode.WordSearch;
 import TDD.TestArrayStrings;
 import structure.ListNode;
 
@@ -36,7 +37,9 @@ public class Main {
 */
 		ArrayStrings array = new ArrayStrings();
 		array.isUnique("asdfqwer");
-
+		
+		WordSearch ws = new WordSearch();
+		ws.exist(new char[][]{{'a', 'b'}}, "ba");
 	
 	}
 

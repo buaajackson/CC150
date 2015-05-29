@@ -1,6 +1,6 @@
 package leetCode;
 
-public class Palindrome {
+public class NumberPalindrome {
 
 	public boolean numberPalindrome(int x){
 		int div = 1;

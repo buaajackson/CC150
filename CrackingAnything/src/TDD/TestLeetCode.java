@@ -26,10 +26,16 @@ public class TestLeetCode {
 	
 	@Test
 	public void testNumberPalindrome(){
-		Palindrome p = new Palindrome();
+		NumberPalindrome p = new NumberPalindrome();
 		Assert.assertTrue(p.numberPalindrome(12344321));
 		Assert.assertTrue(p.numberPalindrome(1234321));
 		Assert.assertFalse(p.numberPalindrome(12332));
 		Assert.assertFalse(p.numberPalindrome(10));
+	}
+	
+	@Test
+	public void testValidPalindrome(){
+		ValidPalindrome vp = new ValidPalindrome();
+		vp.isPalindrome(".a");
 	}
 }
