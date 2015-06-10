@@ -3,6 +3,12 @@ package practice;
 import java.util.ArrayList;
 import java.util.List;
 
+import leetCode.FirstMissingPositive;
+import leetCode.JumpGame;
+import leetCode.MaxProduct;
+import leetCode.MiniPathSum;
+import leetCode.MinimumSubArray;
+import leetCode.NextPermutation;
 import leetCode.SearchInRotatedArray;
 import leetCode.Subset;
 import leetCode.TrappingWater;
@@ -75,9 +81,27 @@ public class Main {
 		
 		Subset ss = new Subset();
 		ss.subsets(new int[] {0});
-*/
+
 		SearchInRotatedArray sra = new SearchInRotatedArray();
 		sra.search(new int[] {1,3}, 3);
+
+		NextPermutation np = new NextPermutation();
+		np.nextPermutation(new int[] {1,3,2});
+
+		MinimumSubArray msa = new MinimumSubArray();
+		msa.minSubArrayLen(4, new int[] {1,4,4});
+
+		MiniPathSum mps = new MiniPathSum();
+		mps.minPathSum(new int[][] {{1,3,1}, {1,5,1}, {4,2,1}});
+
+		MaxProduct mp = new MaxProduct();
+		mp.maxProduct(new int[] {-4, -3});
+
+		JumpGame jg = new JumpGame();
+		jg.canJump(new int[] {0, 1});
+*/
+		FirstMissingPositive fmp = new FirstMissingPositive();
+		fmp.firstMissingPositive(new int[] {1,1});
 	}
 
 }
