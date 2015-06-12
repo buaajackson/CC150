@@ -3,6 +3,8 @@ package practice;
 import java.util.ArrayList;
 import java.util.List;
 
+import leetCode.BuySellStocksIII;
+import leetCode.CombinationSumII;
 import leetCode.FirstMissingPositive;
 import leetCode.JumpGame;
 import leetCode.MaxProduct;
@@ -99,9 +101,16 @@ public class Main {
 
 		JumpGame jg = new JumpGame();
 		jg.canJump(new int[] {0, 1});
-*/
+
 		FirstMissingPositive fmp = new FirstMissingPositive();
 		fmp.firstMissingPositive(new int[] {1,1});
+
+		CombinationSumII cs = new CombinationSumII();
+		cs.combinationSum2(new int[] {1,2}, 4);
+*/
+		BuySellStocksIII bss = new BuySellStocksIII();
+		bss.maxProfit(new int[] {2,1,2,0,1});
+		
 	}
 
 }
