@@ -13,6 +13,8 @@ import leetCode.MinimumSubArray;
 import leetCode.NextPermutation;
 import leetCode.SearchInRotatedArray;
 import leetCode.Subset;
+import leetCode.ThreeSum;
+import leetCode.ThreeSumClosest;
 import leetCode.TrappingWater;
 import leetCode.Triangle;
 import leetCode.TwoSum;
@@ -107,10 +109,15 @@ public class Main {
 
 		CombinationSumII cs = new CombinationSumII();
 		cs.combinationSum2(new int[] {1,2}, 4);
-*/
+
 		BuySellStocksIII bss = new BuySellStocksIII();
 		bss.maxProfit(new int[] {2,1,2,0,1});
-		
+
+		ThreeSum ts = new ThreeSum();
+		ts.threeSum(new int[] {-2,0,1,1,2});
+*/
+		ThreeSumClosest tsc = new ThreeSumClosest();
+		tsc.threeSumClosest(new int[] {-3,-2,-5,3,-4}, -1);
 	}
 
 }
