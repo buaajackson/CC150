@@ -5,12 +5,17 @@ import java.util.List;
 
 import leetCode.BuySellStocksIII;
 import leetCode.CombinationSumII;
+import leetCode.CountAndSay;
 import leetCode.FirstMissingPositive;
 import leetCode.JumpGame;
+import leetCode.JumpGameII;
+import leetCode.LongestPalindromicSubstring;
 import leetCode.MaxProduct;
 import leetCode.MiniPathSum;
 import leetCode.MinimumSubArray;
 import leetCode.NextPermutation;
+import leetCode.RemoveDupFromLinkedListII;
+import leetCode.RemoveLinkedListElements;
 import leetCode.SearchInRotatedArray;
 import leetCode.Subset;
 import leetCode.ThreeSum;
@@ -115,9 +120,28 @@ public class Main {
 
 		ThreeSum ts = new ThreeSum();
 		ts.threeSum(new int[] {-2,0,1,1,2});
-*/
+
 		ThreeSumClosest tsc = new ThreeSumClosest();
 		tsc.threeSumClosest(new int[] {-3,-2,-5,3,-4}, -1);
+
+		RemoveLinkedListElements rlle = new RemoveLinkedListElements();
+		ListNode a = new ListNode(1);
+		ListNode b = new ListNode(1, a);
+		rlle.removeElements(b, 2);
+
+		ListNode a = new ListNode(1);
+		ListNode b = new ListNode(1, a);
+		RemoveDupFromLinkedListII rdf = new RemoveDupFromLinkedListII();
+		rdf.deleteDuplicates(b);
+
+		LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
+		lps.longestPalindrome("bb");
+
+		JumpGameII jg = new JumpGameII();
+		jg.jump(new int[] {3,2,1,0,2});
+*/
+		CountAndSay cas = new CountAndSay();
+		cas.minSubArrayLen(3, new int[] {1,1});
 	}
 
 }
