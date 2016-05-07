@@ -3,7 +3,7 @@ package leetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-import practice.Interval;
+import structure.Interval;
 
 public class MergeInterval {
 	public List<Interval> merge(List<Interval> intervals) {

@@ -2,7 +2,8 @@ package leetCode;
 
 import java.util.ArrayList;
 import java.util.List;
-import practice.Interval;
+
+import structure.Interval;
 
 public class InsertInterval {
 	public List<Interval> insert(List<Interval> intervals, Interval newInterval) {

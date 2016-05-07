@@ -1,5 +1,10 @@
 package year2016;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import structure.Interval;
+
 public class Y2016Main {
 
 	public static void main(String[] args) {
@@ -15,8 +20,18 @@ public class Y2016Main {
 //		SearchInRotatedSortedArrayII s = new SearchInRotatedSortedArrayII();
 //		s.search(new int[] {1, 3}, 3);
 		
-		SearchInsert si = new SearchInsert();
-		si.searchInsert(new int[] {1}, 2);
+//		SearchInsert si = new SearchInsert();
+//		si.searchInsert(new int[] {1}, 2);
+		
+		MergeIntervals mi = new MergeIntervals();
+		Interval l1 = new Interval(1, 4);
+		Interval l2 = new Interval(0, 2);
+		Interval l3 = new Interval(3, 5);
+		List<Interval> list = new ArrayList<Interval>();
+		list.add(l1);
+		list.add(l2);
+		list.add(l3);
+		mi.merge(list);
 	}
 
 }

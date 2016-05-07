@@ -1,4 +1,4 @@
-package practice;
+package structure;
 
 public class Interval {
 	public int start;
