@@ -23,15 +23,24 @@ public class Y2016Main {
 //		SearchInsert si = new SearchInsert();
 //		si.searchInsert(new int[] {1}, 2);
 		
-		MergeIntervals mi = new MergeIntervals();
-		Interval l1 = new Interval(1, 4);
-		Interval l2 = new Interval(0, 2);
-		Interval l3 = new Interval(3, 5);
-		List<Interval> list = new ArrayList<Interval>();
-		list.add(l1);
-		list.add(l2);
-		list.add(l3);
-		mi.merge(list);
+//		MergeIntervals mi = new MergeIntervals();
+//		Interval l1 = new Interval(1, 4);
+//		Interval l2 = new Interval(0, 2);
+//		Interval l3 = new Interval(3, 5);
+//		List<Interval> list = new ArrayList<Interval>();
+//		list.add(l1);
+//		list.add(l2);
+//		list.add(l3);
+//		mi.merge(list);
+		
+//		CompareVersion cv = new CompareVersion();
+//		cv.compareVersion("19.8.3.17.5.01.0.0.4.0.0.0.0.0.0.0.0.0.0.0.0.0.00.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.000000.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.000000",
+//				"19.8.3.17.5.01.0.0.4.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0000.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.000000");
+		
+		ValidParenthesis vp = new ValidParenthesis();
+		vp.isValid("()");
+	
+	
 	}
 
 }
