@@ -1,9 +1,11 @@
 package year2016;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import structure.Interval;
+import structure.ListNode;
 
 public class Y2016Main {
 
@@ -43,9 +45,20 @@ public class Y2016Main {
 //		MultiplyString ms = new MultiplyString();
 //		ms.multiply("98", "9");
 	
-		PhoneNumber pn = new PhoneNumber();
-		pn.letterCombinations("2");
+//		PhoneNumber pn = new PhoneNumber();
+//		pn.letterCombinations("2");
+//	
 	
+//		IntersectionOfLinkedlist i = new IntersectionOfLinkedlist();
+//		ListNode a = new ListNode(3);
+//		ListNode b = new ListNode(2, a);
+//		i.getIntersectionNode(b, a);
+		
+//		LongestIncreasingSequense lis = new LongestIncreasingSequense();
+//		lis.lengthOfLIS(new int[]{10,9,2,5,3,7,101,18});
+//		
+		InterleavingString is = new InterleavingString();
+		is.isInterleave("aa", "ab", "aaba");
 	}
 
 }
